@@ -26,4 +26,4 @@ Version
 Contact Me
 -----------
 Glen  
-E-Mail 36617161@qq.com or liandyii@msn.com
+E-Mail 36617161@qq.com
