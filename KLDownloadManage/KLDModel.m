@@ -10,41 +10,15 @@
 #import <objc/objc-runtime.h>
 
 @implementation KLDModel
-@synthesize fileDirectory, fileName  , url , status , loadedByte , totalByte , isFirstReceive , taskType;
 - (id)initWithTaskWithURL:(NSString *)furl filename:(NSString *)filename type:(TaskType)type
 {
     if((self = [super init]))
     {
-        isFirstReceive = YES;
-        self.titleName =filename;
-        self.fileName = [furl lastPathComponent];
+        self.isFirstReceive = YES;
+        self.name = filename;
         self.url = furl;
+        self.taskType = type;
     }
     return self;
-}
-
-- (id)initWithDictionary:(NSDictionary *)info
-{
-    if((self = [super init]))
-    {
-        
-    }
-    return self;
-}
-
-- (NSDictionary *)desc
-{
-    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    unsigned int outCount;
-    objc_property_t *ps = class_copyPropertyList([self class], &outCount);
-    for(int i = 0 ;i<outCount;i++)
-    {
-        NSString *key = [NSString stringWithCString:property_getName(ps[i]) encoding:NSUTF8StringEncoding];
-        id value = [self valueForKey:key];
-        if(value)
-            [dic setObject:value forKey:key];
-    }
-    free(ps);
-    return dic;
 }
 @end

@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BA7C71318B2FB2E00805647 /* KLDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7C71218B2FB2E00805647 /* KLDModel.m */; };
+		8B5ED4BB18BDDC41007E3CE4 /* KLDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5ED4BA18BDDC41007E3CE4 /* KLDModel.m */; };
 		8BA7C71818B4613700805647 /* KLDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7C71618B4613700805647 /* KLDownloadViewController.m */; };
 		8BA7C71918B4613700805647 /* KLDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA7C71718B4613700805647 /* KLDownloadViewController.xib */; };
+		8BABB48A18C56B0600464215 /* KLDownloadManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB47E18C56B0600464215 /* KLDownloadManage.m */; };
+		8BABB48B18C56B0600464215 /* KLFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48018C56B0600464215 /* KLFileManage.m */; };
+		8BABB48C18C56B0600464215 /* KLModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48218C56B0600464215 /* KLModelBase.m */; };
+		8BABB48D18C56B0600464215 /* KLEXTINF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48518C56B0600464215 /* KLEXTINF.m */; };
+		8BABB48E18C56B0600464215 /* KLEXTxKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48718C56B0600464215 /* KLEXTxKey.m */; };
+		8BABB48F18C56B0600464215 /* KLM3U8.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48918C56B0600464215 /* KLM3U8.m */; };
 		8BC2609018ADA89700268199 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC2608F18ADA89700268199 /* libz.1.2.5.dylib */; };
 		8BC2609718ADA97B00268199 /* KLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC2609518ADA97B00268199 /* KLRootViewController.m */; };
 		8BC2609818ADA97B00268199 /* KLRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC2609618ADA97B00268199 /* KLRootViewController.xib */; };
 		8BC457BE18B5FDFA001C872E /* IKULoadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC457BD18B5FDFA001C872E /* IKULoadCell.m */; };
-		8BC457C118B7386C001C872E /* KLFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC457C018B7386C001C872E /* KLFileManage.m */; };
 		8BDBA5D218ACB78F004FF930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDBA5D118ACB78F004FF930 /* Foundation.framework */; };
 		8BDBA5D418ACB78F004FF930 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDBA5D318ACB78F004FF930 /* CoreGraphics.framework */; };
 		8BDBA5D618ACB78F004FF930 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDBA5D518ACB78F004FF930 /* UIKit.framework */; };
@@ -27,7 +32,6 @@
 		8BDBA5ED18ACB78F004FF930 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDBA5D518ACB78F004FF930 /* UIKit.framework */; };
 		8BDBA5F518ACB78F004FF930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBA5F318ACB78F004FF930 /* InfoPlist.strings */; };
 		8BDBA5F718ACB78F004FF930 /* KLDownloadManageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBA5F618ACB78F004FF930 /* KLDownloadManageTests.m */; };
-		8BDBA60318ACB7ED004FF930 /* KLDownloadManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBA60218ACB7ED004FF930 /* KLDownloadManage.m */; };
 		8BDBA66218ACCBF3004FF930 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBA60B18ACCBF3004FF930 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8BDBA66318ACCBF3004FF930 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBA60E18ACCBF3004FF930 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8BDBA66418ACCBF3004FF930 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBA61018ACCBF3004FF930 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -50,12 +54,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BA7C70D18B19C5F00805647 /* KLModelProtocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLModelProtocal.h; sourceTree = "<group>"; };
-		8BA7C71118B2FB2E00805647 /* KLDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDModel.h; sourceTree = "<group>"; };
-		8BA7C71218B2FB2E00805647 /* KLDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDModel.m; sourceTree = "<group>"; };
+		8B5ED4B918BDDC41007E3CE4 /* KLDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDModel.h; sourceTree = "<group>"; };
+		8B5ED4BA18BDDC41007E3CE4 /* KLDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDModel.m; sourceTree = "<group>"; };
 		8BA7C71518B4613700805647 /* KLDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDownloadViewController.h; sourceTree = "<group>"; };
 		8BA7C71618B4613700805647 /* KLDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDownloadViewController.m; sourceTree = "<group>"; };
 		8BA7C71718B4613700805647 /* KLDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLDownloadViewController.xib; sourceTree = "<group>"; };
+		8BABB47C18C56B0600464215 /* KLDMMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDMMacros.h; sourceTree = "<group>"; };
+		8BABB47D18C56B0600464215 /* KLDownloadManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDownloadManage.h; sourceTree = "<group>"; };
+		8BABB47E18C56B0600464215 /* KLDownloadManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDownloadManage.m; sourceTree = "<group>"; };
+		8BABB47F18C56B0600464215 /* KLFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFileManage.h; sourceTree = "<group>"; };
+		8BABB48018C56B0600464215 /* KLFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFileManage.m; sourceTree = "<group>"; };
+		8BABB48118C56B0600464215 /* KLModelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLModelBase.h; sourceTree = "<group>"; };
+		8BABB48218C56B0600464215 /* KLModelBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLModelBase.m; sourceTree = "<group>"; };
+		8BABB48418C56B0600464215 /* KLEXTINF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLEXTINF.h; sourceTree = "<group>"; };
+		8BABB48518C56B0600464215 /* KLEXTINF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLEXTINF.m; sourceTree = "<group>"; };
+		8BABB48618C56B0600464215 /* KLEXTxKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLEXTxKey.h; sourceTree = "<group>"; };
+		8BABB48718C56B0600464215 /* KLEXTxKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLEXTxKey.m; sourceTree = "<group>"; };
+		8BABB48818C56B0600464215 /* KLM3U8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLM3U8.h; sourceTree = "<group>"; };
+		8BABB48918C56B0600464215 /* KLM3U8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLM3U8.m; sourceTree = "<group>"; };
 		8BC2608B18ADA84900268199 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8BC2608D18ADA88400268199 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8BC2608F18ADA89700268199 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
@@ -64,8 +80,6 @@
 		8BC2609618ADA97B00268199 /* KLRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLRootViewController.xib; sourceTree = "<group>"; };
 		8BC457BC18B5FDFA001C872E /* IKULoadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKULoadCell.h; sourceTree = "<group>"; };
 		8BC457BD18B5FDFA001C872E /* IKULoadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKULoadCell.m; sourceTree = "<group>"; };
-		8BC457BF18B7386C001C872E /* KLFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFileManage.h; sourceTree = "<group>"; };
-		8BC457C018B7386C001C872E /* KLFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFileManage.m; sourceTree = "<group>"; };
 		8BDBA5CE18ACB78F004FF930 /* KLDownloadManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLDownloadManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDBA5D118ACB78F004FF930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BDBA5D318ACB78F004FF930 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,8 +96,6 @@
 		8BDBA5F218ACB78F004FF930 /* KLDownloadManageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KLDownloadManageTests-Info.plist"; sourceTree = "<group>"; };
 		8BDBA5F418ACB78F004FF930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8BDBA5F618ACB78F004FF930 /* KLDownloadManageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLDownloadManageTests.m; sourceTree = "<group>"; };
-		8BDBA60118ACB7ED004FF930 /* KLDownloadManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDownloadManage.h; sourceTree = "<group>"; };
-		8BDBA60218ACB7ED004FF930 /* KLDownloadManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDownloadManage.m; sourceTree = "<group>"; };
 		8BDBA60A18ACCBF3004FF930 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		8BDBA60B18ACCBF3004FF930 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		8BDBA60C18ACCBF3004FF930 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -136,8 +148,8 @@
 		8BA7C71418B2FB3D00805647 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8BA7C71118B2FB2E00805647 /* KLDModel.h */,
-				8BA7C71218B2FB2E00805647 /* KLDModel.m */,
+				8B5ED4B918BDDC41007E3CE4 /* KLDModel.h */,
+				8B5ED4BA18BDDC41007E3CE4 /* KLDModel.m */,
 				8BC2609418ADA97B00268199 /* KLRootViewController.h */,
 				8BC2609518ADA97B00268199 /* KLRootViewController.m */,
 				8BC2609618ADA97B00268199 /* KLRootViewController.xib */,
@@ -148,6 +160,34 @@
 				8BC457BD18B5FDFA001C872E /* IKULoadCell.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		8BABB47B18C56B0600464215 /* DownloadManage */ = {
+			isa = PBXGroup;
+			children = (
+				8BABB47C18C56B0600464215 /* KLDMMacros.h */,
+				8BABB47D18C56B0600464215 /* KLDownloadManage.h */,
+				8BABB47E18C56B0600464215 /* KLDownloadManage.m */,
+				8BABB47F18C56B0600464215 /* KLFileManage.h */,
+				8BABB48018C56B0600464215 /* KLFileManage.m */,
+				8BABB48118C56B0600464215 /* KLModelBase.h */,
+				8BABB48218C56B0600464215 /* KLModelBase.m */,
+				8BABB48318C56B0600464215 /* m3u8 */,
+			);
+			path = DownloadManage;
+			sourceTree = SOURCE_ROOT;
+		};
+		8BABB48318C56B0600464215 /* m3u8 */ = {
+			isa = PBXGroup;
+			children = (
+				8BABB48418C56B0600464215 /* KLEXTINF.h */,
+				8BABB48518C56B0600464215 /* KLEXTINF.m */,
+				8BABB48618C56B0600464215 /* KLEXTxKey.h */,
+				8BABB48718C56B0600464215 /* KLEXTxKey.m */,
+				8BABB48818C56B0600464215 /* KLM3U8.h */,
+				8BABB48918C56B0600464215 /* KLM3U8.m */,
+			);
+			path = m3u8;
 			sourceTree = "<group>";
 		};
 		8BDBA5C518ACB78E004FF930 = {
@@ -186,11 +226,11 @@
 		8BDBA5D718ACB78F004FF930 /* KLDownloadManage */ = {
 			isa = PBXGroup;
 			children = (
+				8BABB47B18C56B0600464215 /* DownloadManage */,
 				8BDBA60818ACCBF3004FF930 /* asi-http-request */,
 				8BDBA5E018ACB78F004FF930 /* KLAppDelegate.h */,
 				8BDBA5E118ACB78F004FF930 /* KLAppDelegate.m */,
 				8BA7C71418B2FB3D00805647 /* Classes */,
-				8BDBA60018ACB7C0004FF930 /* DownloadManage */,
 				8BDBA5E318ACB78F004FF930 /* Images.xcassets */,
 				8BDBA5D818ACB78F004FF930 /* Supporting Files */,
 			);
@@ -224,18 +264,6 @@
 				8BDBA5F318ACB78F004FF930 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8BDBA60018ACB7C0004FF930 /* DownloadManage */ = {
-			isa = PBXGroup;
-			children = (
-				8BC457BF18B7386C001C872E /* KLFileManage.h */,
-				8BC457C018B7386C001C872E /* KLFileManage.m */,
-				8BDBA60118ACB7ED004FF930 /* KLDownloadManage.h */,
-				8BDBA60218ACB7ED004FF930 /* KLDownloadManage.m */,
-				8BA7C70D18B19C5F00805647 /* KLModelProtocal.h */,
-			);
-			path = DownloadManage;
 			sourceTree = "<group>";
 		};
 		8BDBA60818ACCBF3004FF930 /* asi-http-request */ = {
@@ -390,22 +418,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA7C71818B4613700805647 /* KLDownloadViewController.m in Sources */,
+				8BABB48C18C56B0600464215 /* KLModelBase.m in Sources */,
 				8BDBA66318ACCBF3004FF930 /* ASIDataCompressor.m in Sources */,
+				8BABB48D18C56B0600464215 /* KLEXTINF.m in Sources */,
 				8BC457BE18B5FDFA001C872E /* IKULoadCell.m in Sources */,
 				8BDBA5DE18ACB78F004FF930 /* main.m in Sources */,
 				8BDBA66218ACCBF3004FF930 /* ASIAuthenticationDialog.m in Sources */,
+				8BABB48F18C56B0600464215 /* KLM3U8.m in Sources */,
+				8BABB48A18C56B0600464215 /* KLDownloadManage.m in Sources */,
 				8BDBA68818ACCBF3004FF930 /* Reachability.m in Sources */,
 				8BDBA66618ACCBF3004FF930 /* ASIFormDataRequest.m in Sources */,
 				8BDBA66418ACCBF3004FF930 /* ASIDataDecompressor.m in Sources */,
-				8BDBA60318ACB7ED004FF930 /* KLDownloadManage.m in Sources */,
 				8BDBA66818ACCBF3004FF930 /* ASIInputStream.m in Sources */,
 				8BDBA66918ACCBF3004FF930 /* ASINetworkQueue.m in Sources */,
 				8BDBA66718ACCBF3004FF930 /* ASIHTTPRequest.m in Sources */,
-				8BC457C118B7386C001C872E /* KLFileManage.m in Sources */,
+				8BABB48B18C56B0600464215 /* KLFileManage.m in Sources */,
 				8BC2609718ADA97B00268199 /* KLRootViewController.m in Sources */,
-				8BA7C71318B2FB2E00805647 /* KLDModel.m in Sources */,
+				8B5ED4BB18BDDC41007E3CE4 /* KLDModel.m in Sources */,
 				8BDBA66518ACCBF3004FF930 /* ASIDownloadCache.m in Sources */,
 				8BDBA5E218ACB78F004FF930 /* KLAppDelegate.m in Sources */,
+				8BABB48E18C56B0600464215 /* KLEXTxKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KLDownloadManage/KLDownloadManage-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -542,6 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KLDownloadManage/KLDownloadManage-Prefix.pch";
 				HEADER_SEARCH_PATHS = (

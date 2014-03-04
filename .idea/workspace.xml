@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46f4e060-5b85-42a3-b720-68915d7f987c" name="Default" comment="" />
+    <list default="true" readonly="true" id="46f4e060-5b85-42a3-b720-68915d7f987c" name="Default" comment="" />
     <ignored path="KLDownloadManage.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +23,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="KLProgressCell.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLProgressCell.m">
+      <file leaf-file-name="KLDownloadManage.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/KLDownloadManage/DownloadManage/KLDownloadManage.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
+            <state line="44" column="0" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.31220657" vertical-offset="382" max-vertical-offset="6444">
+              <folding>
+                <element signature="n#init#0;n#KLDownloadManage#0" expanded="false" />
+                <element signature="n#queueWithSingleModel:#0;n#KLDownloadManage#0" expanded="false" />
+                <element signature="n#queueWithMultipleModel:#0;n#KLDownloadManage#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KLDownloadManage.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KLDownloadManage/DownloadManage/KLDownloadManage.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="1" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1152">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KLDownloadViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDownloadViewController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="1" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KLDownloadViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDownloadViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
               <folding />
             </state>
           </provider>
@@ -35,19 +66,8 @@
       <file leaf-file-name="KLDModel.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDModel.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+            <state line="15" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KLProgressCell.h" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLProgressCell.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="1" selection-start="225" selection-end="225" vertical-scroll-proportion="0.1922043" vertical-offset="0" max-vertical-offset="744">
-              <folding>
-                <element signature="e#135#158#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -63,14 +83,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/KLDownloadManage/KLProgressCell.h" />
+        <option value="$PROJECT_DIR$/KLDownloadManage/KLDModel.h" />
+        <option value="$PROJECT_DIR$/KLDownloadManage/TempFileTmeplates.xsl" />
+        <option value="$PROJECT_DIR$/KLDownloadManage/DownloadManage/KLDownloadManage.h" />
+        <option value="$PROJECT_DIR$/KLDownloadManage/DownloadManage/KLDownloadManage.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="236" />
-    <option name="y" value="83" />
-    <option name="width" value="1400" />
-    <option name="height" value="866" />
+    <option name="y" value="22" />
+    <option name="width" value="1920" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -152,7 +175,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Classes" />
+              <option name="myItemId" value="DownloadManage" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -162,7 +185,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
     <property name="recentsLimit" value="5" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.KLDownloadManage">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="KLDownloadManage" TARGET_NAME="KLDownloadManage" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="KLDownloadManage" RUN_TARGET_NAME="KLDownloadManage" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -171,6 +198,22 @@
     </configuration>
     <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PROJECT_NAME="KLDownloadManage" TARGET_NAME="KLDownloadManageTests" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" TEST_MODE="SUITE_TEST">
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
     <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PROJECT_NAME="KLDownloadManage" TARGET_NAME="KLDownloadManage" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" TEST_MODE="SUITE_TEST">
@@ -203,6 +246,7 @@
     <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -213,25 +257,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="236" y="83" width="1400" height="866" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981844" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18133895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -246,25 +290,76 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLProgressCell.m">
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDModel.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
+        <state line="15" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/TempFileTmeplates.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="238">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDModel.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+        <state line="15" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLProgressCell.h">
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDModel.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="225" selection-end="225" vertical-scroll-proportion="0.1922043" vertical-offset="0" max-vertical-offset="744">
+        <state line="12" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/TempFileTmeplates.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="590" selection-end="590" vertical-scroll-proportion="0.20698924" vertical-offset="0" max-vertical-offset="744">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDownloadViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/KLDownloadViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="1" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/DownloadManage/KLDownloadManage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="1" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1152">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KLDownloadManage/DownloadManage/KLDownloadManage.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.31220657" vertical-offset="382" max-vertical-offset="6444">
           <folding>
-            <element signature="e#135#158#0" expanded="true" />
+            <element signature="n#init#0;n#KLDownloadManage#0" expanded="false" />
+            <element signature="n#queueWithSingleModel:#0;n#KLDownloadManage#0" expanded="false" />
+            <element signature="n#queueWithMultipleModel:#0;n#KLDownloadManage#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -12,5 +12,6 @@
 @interface KLDownloadViewController : UIViewController <UITableViewDataSource , UITableViewDelegate , KLDownloadManageDelegate>
 {
     KLDownloadManage *downloadManage;
+    IBOutlet UITableView *tableview;
 }
 @end

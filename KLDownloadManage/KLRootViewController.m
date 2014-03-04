@@ -37,50 +37,16 @@
                                                                     target:self
                                                                     action:@selector(enterDownloadPage:)];
     [self.navigationItem setRightBarButtonItem:barbuttonItem];
-//    UIBarButtonItem *bbL1 = [[UIBarButtonItem alloc]initWithTitle:@"开1"
-//                                                            style:UIBarButtonItemStyleBordered
-//                                                           target:self
-//                                                           action:@selector(startSingleTask:)];
-//    [self.navigationItem setLeftBarButtonItem:bbL1];
-//    UIBarButtonItem *bbL2 = [[UIBarButtonItem alloc]initWithTitle:@"停1"
-//                                                            style:UIBarButtonItemStyleBordered
-//                                                           target:self
-//                                                           action:@selector(stopSingleTask:)];
-//    [self.navigationItem setLeftBarButtonItem:bbL2];
-    UIBarButtonItem *bbL3 = [[UIBarButtonItem alloc]initWithTitle:@"开全"
-                                                            style:UIBarButtonItemStyleBordered
-                                                           target:self
-                                                           action:@selector(startTasks:)];
-    [self.navigationItem setLeftBarButtonItem:bbL3];
-    UIBarButtonItem *bbL4 = [[UIBarButtonItem alloc]initWithTitle:@"停全"
-                                                            style:UIBarButtonItemStyleBordered
-                                                           target:self
-                                                           action:@selector(stopTasks:)];
-    [self.navigationItem setLeftBarButtonItem:bbL4];
     
-    manage = [KLDownloadManage sharedDownloadManage];
-}
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
+    manage = [KLDownloadManage sharedDownloadManageWithModelClass:[KLDModel class]];
+    NSArray *array =[manage getDownloadingList];
+    downloadingName = [NSMutableArray array];
+    for(KLDModel *dm in array)
+    {
+        [downloadingName addObject:dm.name];
+    }
 }
 
-- (void)startSingleTask:(id)sender
-{
-    
-}
-- (void)stopSingleTask:(id)sender
-{
-    
-}
-- (void)startTasks:(id)sender
-{
-    
-}
-- (void)stopTasks:(id)sender
-{
-    
-}
 - (void)enterDownloadPage:(UIBarButtonItem *)sender
 {
     KLDownloadViewController *dvc = [[KLDownloadViewController alloc]init];
@@ -92,6 +58,7 @@
 {
     return [dataSource count];
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"c"];
@@ -102,18 +69,27 @@
     [cell setAccessoryType:UITableViewCellAccessoryDetailButton];
     return cell;
 }
+
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     NSError *error = nil;
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    dmodel = [[KLDModel alloc]initWithTaskWithURL:cell.detailTextLabel.text filename:cell.textLabel.text  type:TaskType_SingleFile];
-    if([manage addTask:dmodel error:&error])
+    
+    TaskType type = TaskType_SingleFile;
+    if([cell.textLabel.text isEqualToString:@"M3U8"])
+    {
+        type = TaskType_M3U8;
+    }
+    dmodel = [[KLDModel alloc]initWithTaskWithURL:cell.detailTextLabel.text filename:cell.textLabel.text  type:type];
+    [dmodel setTitleName:cell.textLabel.text];
+    [dmodel setDirectory:@"abc"];
+    if([manage addTask:dmodel autoStart:YES error:&error])
     {
         [cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
     }else{
         NSLog(@"%@" , error);
-//        assert(0);
     }
+    [self enterDownloadPage:nil];
 }
 
 @end

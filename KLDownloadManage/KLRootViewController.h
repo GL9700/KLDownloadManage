@@ -15,5 +15,6 @@
     NSArray *dataSource;
     KLDownloadManage *manage;
     KLDModel *dmodel;
+    NSMutableArray *downloadingName;
 }
 @end

@@ -15,4 +15,7 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define DebugMode;
+
+#define kPathFinished [[NSSearchPathForDirectoriesInDomains(NSDownloadsDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"Finished"]
+#define kPathDownloading [[NSSearchPathForDirectoriesInDomains(NSDownloadsDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"Downloading"]
+#define kIndexSuffix @"INF"

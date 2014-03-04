@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KLModelProtocal.h"
+#import "KLModelBase.h"
 
-@interface KLDModel : NSObject<KLModelProtocal>
+@interface KLDModel : KLModelBase
 @property (nonatomic , strong) NSString *titleName;
+- (id)initWithTaskWithURL:(NSString *)furl filename:(NSString *)filename type:(TaskType)type;
 @end
