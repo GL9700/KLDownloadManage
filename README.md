@@ -1,5 +1,6 @@
 KLDownloadManage
 ================
+download Library : support M3U8 and Multiple File download.
 
 struct & Frame  
 --------
