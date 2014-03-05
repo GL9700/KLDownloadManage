@@ -20,7 +20,7 @@
     {
         _dm_isFirstReceive =YES;
         queue = [[ASINetworkQueue alloc]init];
-        SAFE_ARC_AUTORELEASE(queue);
+//        SAFE_ARC_AUTORELEASE(queue);
         [queue setMaxConcurrentOperationCount:1];
         [queue setShowAccurateProgress:YES];
         [queue setUserInfo:@{@"model":self}];

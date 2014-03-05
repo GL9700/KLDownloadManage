@@ -15,9 +15,11 @@ static KLDownloadManage *instanceDM;
 + (id)sharedDownloadManageWithModelClass:(Class)modelClass
 {
     if(!instanceDM)
+    {
         instanceDM = [[KLDownloadManage alloc]init];
-    [instanceDM setModelClass:modelClass];
-    [instanceDM initLists];
+        [instanceDM setModelClass:modelClass];
+        [instanceDM initLists];
+    }
     return instanceDM;
 }
 
@@ -31,8 +33,8 @@ static KLDownloadManage *instanceDM;
     if(![fm fileExistsAtPath:kPathFinished])
         [fm createDirectoryAtPath:kPathFinished withIntermediateDirectories:YES attributes:nil error:nil];
     
-    loads = [self getConverModelsFromFiles:[KLFileManage getFilesPathWithFolder:kPathDownloading withSuffix:kIndexSuffix]];
-    finisheds = [self getConverModelsFromFiles:[KLFileManage getFilesPathWithFolder:kPathFinished withSuffix:kIndexSuffix]];
+    loads = SAFE_ARC_RETAIN([self getConverModelsFromFiles:[KLFileManage getFilesPathWithFolder:kPathDownloading withSuffix:kIndexSuffix]]);
+    finisheds = SAFE_ARC_RETAIN([self getConverModelsFromFiles:[KLFileManage getFilesPathWithFolder:kPathFinished withSuffix:kIndexSuffix]]);
 }
 - (NSMutableArray *)getConverModelsFromFiles:(NSArray *)files
 {
