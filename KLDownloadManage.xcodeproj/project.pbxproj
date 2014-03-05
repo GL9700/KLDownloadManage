@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B59ED5618C6F3BF006E7D4A /* KLFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B59ED5518C6F3BF006E7D4A /* KLFileManage.m */; };
 		8B5ED4BB18BDDC41007E3CE4 /* KLDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5ED4BA18BDDC41007E3CE4 /* KLDModel.m */; };
 		8BA7C71818B4613700805647 /* KLDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7C71618B4613700805647 /* KLDownloadViewController.m */; };
 		8BA7C71918B4613700805647 /* KLDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA7C71718B4613700805647 /* KLDownloadViewController.xib */; };
 		8BABB48A18C56B0600464215 /* KLDownloadManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB47E18C56B0600464215 /* KLDownloadManage.m */; };
-		8BABB48B18C56B0600464215 /* KLFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48018C56B0600464215 /* KLFileManage.m */; };
 		8BABB48C18C56B0600464215 /* KLModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48218C56B0600464215 /* KLModelBase.m */; };
 		8BABB48D18C56B0600464215 /* KLEXTINF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48518C56B0600464215 /* KLEXTINF.m */; };
 		8BABB48E18C56B0600464215 /* KLEXTxKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABB48718C56B0600464215 /* KLEXTxKey.m */; };
@@ -54,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B59ED5418C6F3BF006E7D4A /* KLFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFileManage.h; sourceTree = "<group>"; };
+		8B59ED5518C6F3BF006E7D4A /* KLFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFileManage.m; sourceTree = "<group>"; };
 		8B5ED4B918BDDC41007E3CE4 /* KLDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDModel.h; sourceTree = "<group>"; };
 		8B5ED4BA18BDDC41007E3CE4 /* KLDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDModel.m; sourceTree = "<group>"; };
 		8BA7C71518B4613700805647 /* KLDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDownloadViewController.h; sourceTree = "<group>"; };
@@ -62,8 +64,6 @@
 		8BABB47C18C56B0600464215 /* KLDMMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDMMacros.h; sourceTree = "<group>"; };
 		8BABB47D18C56B0600464215 /* KLDownloadManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDownloadManage.h; sourceTree = "<group>"; };
 		8BABB47E18C56B0600464215 /* KLDownloadManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDownloadManage.m; sourceTree = "<group>"; };
-		8BABB47F18C56B0600464215 /* KLFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFileManage.h; sourceTree = "<group>"; };
-		8BABB48018C56B0600464215 /* KLFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFileManage.m; sourceTree = "<group>"; };
 		8BABB48118C56B0600464215 /* KLModelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLModelBase.h; sourceTree = "<group>"; };
 		8BABB48218C56B0600464215 /* KLModelBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLModelBase.m; sourceTree = "<group>"; };
 		8BABB48418C56B0600464215 /* KLEXTINF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLEXTINF.h; sourceTree = "<group>"; };
@@ -145,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B59ED5318C6F3A2006E7D4A /* KLPublic */ = {
+			isa = PBXGroup;
+			children = (
+				8B59ED5418C6F3BF006E7D4A /* KLFileManage.h */,
+				8B59ED5518C6F3BF006E7D4A /* KLFileManage.m */,
+			);
+			path = KLPublic;
+			sourceTree = SOURCE_ROOT;
+		};
 		8BA7C71418B2FB3D00805647 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,8 +177,6 @@
 				8BABB47C18C56B0600464215 /* KLDMMacros.h */,
 				8BABB47D18C56B0600464215 /* KLDownloadManage.h */,
 				8BABB47E18C56B0600464215 /* KLDownloadManage.m */,
-				8BABB47F18C56B0600464215 /* KLFileManage.h */,
-				8BABB48018C56B0600464215 /* KLFileManage.m */,
 				8BABB48118C56B0600464215 /* KLModelBase.h */,
 				8BABB48218C56B0600464215 /* KLModelBase.m */,
 				8BABB48318C56B0600464215 /* m3u8 */,
@@ -226,6 +233,7 @@
 		8BDBA5D718ACB78F004FF930 /* KLDownloadManage */ = {
 			isa = PBXGroup;
 			children = (
+				8B59ED5318C6F3A2006E7D4A /* KLPublic */,
 				8BABB47B18C56B0600464215 /* DownloadManage */,
 				8BDBA60818ACCBF3004FF930 /* asi-http-request */,
 				8BDBA5E018ACB78F004FF930 /* KLAppDelegate.h */,
@@ -432,8 +440,8 @@
 				8BDBA66818ACCBF3004FF930 /* ASIInputStream.m in Sources */,
 				8BDBA66918ACCBF3004FF930 /* ASINetworkQueue.m in Sources */,
 				8BDBA66718ACCBF3004FF930 /* ASIHTTPRequest.m in Sources */,
-				8BABB48B18C56B0600464215 /* KLFileManage.m in Sources */,
 				8BC2609718ADA97B00268199 /* KLRootViewController.m in Sources */,
+				8B59ED5618C6F3BF006E7D4A /* KLFileManage.m in Sources */,
 				8B5ED4BB18BDDC41007E3CE4 /* KLDModel.m in Sources */,
 				8BDBA66518ACCBF3004FF930 /* ASIDownloadCache.m in Sources */,
 				8BDBA5E218ACB78F004FF930 /* KLAppDelegate.m in Sources */,

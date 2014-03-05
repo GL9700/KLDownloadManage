@@ -7,7 +7,6 @@
 //
 #import <Foundation/Foundation.h>
 #import "ASINetworkQueue.h"
-#import "ASIHTTPRequest.h"
 
 typedef enum
 {
@@ -29,19 +28,19 @@ typedef enum {
 }
 
 @property TaskType taskType;
-@property (nonatomic , strong) NSString *ident;
-@property (nonatomic , strong) NSString *name;
-@property (nonatomic , strong) NSString *url;
-@property (nonatomic , strong) NSString *directory;
-@property (nonatomic , strong) NSString *loadedByte;
-@property (nonatomic , strong) NSString *totalByte;
+@property (nonatomic , strong) NSString *dm_ident;
+@property (nonatomic , strong) NSString *dm_name;
+@property (nonatomic , strong) NSString *dm_url;
+@property (nonatomic , strong) NSString *dm_directory;
+@property (nonatomic , strong) NSString *dm_loadedByte;
+@property (nonatomic , strong) NSString *dm_totalByte;
 
-@property (nonatomic , strong) NSString *m3u8IV;
-@property (nonatomic , strong) NSString *m3u8METHOD;
-@property (nonatomic , strong) KLModelBase *m3u8KEY;
-@property (nonatomic , strong) NSMutableArray *m3u8TS;
-@property TaskStatus status;
-@property BOOL isFirstReceive;
+@property (nonatomic , strong) NSString *dm_m3u8IV;
+@property (nonatomic , strong) NSString *dm_m3u8METHOD;
+@property (nonatomic , strong) KLModelBase *dm_m3u8KEY;
+@property (nonatomic , strong) NSMutableArray *dm_m3u8TS;
+@property TaskStatus dm_status;
+@property BOOL dm_isFirstReceive;
 
 - (id)initWithDictionary:(NSDictionary *)dict;
 - (NSOperation *)getOperationWithDelegate:(NSObject *)delegateObject;
@@ -50,6 +49,6 @@ typedef enum {
 - (void)addOperation:(NSOperation*)operation;
 - (void)startWithDelegate:(NSObject *)delegateObject;
 - (void)stop;
-- (void)setFinishTask:(NSString *)taskurl;
+- (void)addFinishTS:(NSString *)tsurl;
 
 @end

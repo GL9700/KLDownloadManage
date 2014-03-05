@@ -14,9 +14,9 @@
 {
     if((self = [super init]))
     {
-        self.isFirstReceive = YES;
-        self.name = filename;
-        self.url = furl;
+        self.dm_isFirstReceive = YES;
+        self.dm_name = filename;
+        self.dm_url = furl;
         self.taskType = type;
     }
     return self;

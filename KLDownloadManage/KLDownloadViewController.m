@@ -72,14 +72,24 @@
             {
                 dispatch_sync(dispatch_get_main_queue(), ^{
                     long long load , total;
-                    load = atoll([model.loadedByte UTF8String]);
-                    total = atoll([model.totalByte UTF8String]);
+                    load = atoll([model.dm_loadedByte UTF8String]);
+                    total = atoll([model.dm_totalByte UTF8String]);
                     float pro = ((float)load/total);
                     [cell.progressView setProgress:pro];
                 });
             }
         }
     });
+}
+- (void)taskError:(KLModelBase *)model
+{
+    NSLog(@"%@ 下载失败" , model.dm_name);
+    assert(0);
+}
+- (void)taskFinish:(KLModelBase *)model
+{
+    NSLog(@"%@ 下载完成" , model.dm_name);
+    assert(0);
 }
 
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

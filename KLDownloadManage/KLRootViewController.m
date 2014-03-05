@@ -14,7 +14,7 @@
 - (id)init
 {
     if((self = [super init])){
-        dataSource = @[
+        dataSource = [[NSArray alloc]initWithObjects:
                        @{@"name" : @"QQ 5.0" , @"URL" : @"http://dldir1.qq.com/qqfile/qq/QQ5.0/9857/QQ5.0.exe"},
                        @{@"name" : @"电脑管家" , @"URL" : @"http://dlied6.qq.com/invc/xfspeed/qqpcmgr/download/QQPCDownload140063.exe"},
                        @{@"name" : @"软件管理" , @"URL" : @"http://dldir2.qq.com/invc/xfspeed/softmgr/SoftMgr_Setup_S40001.exe"},
@@ -24,7 +24,7 @@
                        @{@"name" : @"QQ输入法" , @"URL" : @"http://dl_dir.qq.com/invc/qqpinyin/QQPinyin_Setup_4.6.2028.400.exe"},
                        @{@"name" : @"TM2013" , @"URL" : @"http://dldir1.qq.com/qqfile/tm/TM2013Preview1.exe"},
                        @{@"name" : @"M3U8" , @"URL" : @"http://192.168.100.83:8111/product/play_video?im=bcd2faa17470722b50bf6b03fdb02662005613b286263614ce9d8585ca082ccb&vendor=koolearn&protocol_version=1.0&app_id=126&os_type=iphone&record_id=0&platform=ios_iphone_7.0.3&version=1&app_name=%E6%96%B0%E4%B8%9C%E6%96%B9%E5%9C%A8%E7%BA%BF&sid=89a9d4de6a116eefac3816a0d85f25d6bd28c4c58e5db452&unit_id=608601&model=apple&account_id=0&sign=bcc233ad90a88dd9c02ba4361baf5d61&network=wifi&screensize=640*960"}
-                       ];
+                       ,nil];
     }
     return self;
 }
@@ -43,7 +43,7 @@
     downloadingName = [NSMutableArray array];
     for(KLDModel *dm in array)
     {
-        [downloadingName addObject:dm.name];
+        [downloadingName addObject:dm.dm_name];
     }
 }
 
@@ -82,7 +82,7 @@
     }
     dmodel = [[KLDModel alloc]initWithTaskWithURL:cell.detailTextLabel.text filename:cell.textLabel.text  type:type];
     [dmodel setTitleName:cell.textLabel.text];
-    [dmodel setDirectory:@"abc"];
+    [dmodel setDm_directory:@"abc"];
     if([manage addTask:dmodel autoStart:YES error:&error])
     {
         [cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];

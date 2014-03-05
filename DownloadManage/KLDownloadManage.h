@@ -1,6 +1,5 @@
 //
 //  KLDownloadManage.h
-//  KLDownloadManage
 //
 //  Created by Glen on 14-2-13.
 //  Copyright (c) 2014年 Glen. All rights reserved.
@@ -17,20 +16,23 @@
 //              #define kIndexSuffix @"INF"
 //
 //  b)  此下载需要配合ASI使用，请事先自行添加ASI至项目
+//  c)  为保证项目能够在任何时候轻松调用，请在项目之初就调用初始化函数
+//  d)  在需要控制和显示的页面设置delegate
 //
 // **************************************************************************
 //
-// KLDownloadManage 此类用于下载文件，并保存至指定目录
-// 为保证项目能够在任何时候轻松调用，请在项目之初就调用初始化函数
-// 在需要控制和显示的页面设置delegate
+// KLDownloadManage 此类用于下载文件
 //
-//                                                                             --- --- Ver 1.0 --- --- --- --- 2014-03-03 --- ---
+//                                                                             --- --- Ver 1.00 --- --- --- --- 2014-03-03 --- ---
+//
+// KLModelBase 重构变量名称预防命名冲突
+// KLDownloadManage 修正了在MRC状态下两处过度释放的问题
+//
+//                                                                             --- --- Ver 1.02 --- --- --- --- 2014-03-05 --- ---
 // **************************************************************************
 
 #import <Foundation/Foundation.h>
 #import "KLModelBase.h"
-#import "ASIHTTPRequest.h"
-#import "ASINetworkQueue.h"
 #import "KLDMMacros.h"
 
 @class KLDownloadManage;
@@ -43,9 +45,9 @@
 
 @end
 
-@interface KLDownloadManage : NSObject <ASIProgressDelegate , ASIHTTPRequestDelegate>
+@interface KLDownloadManage : NSObject
 {
-    NSMutableArray *models; // <Model>
+    NSMutableArray *loads; // <Model>
     NSMutableArray *finisheds; // <Model>
     BOOL isHeaderBytes;
 }

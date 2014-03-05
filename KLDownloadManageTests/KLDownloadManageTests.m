@@ -7,9 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "KLDModel.h"
-#import "ASINetworkQueue.h"
-#import "ASIHTTPRequest.h"
+#import "KLCache.h"
+
 @interface KLDownloadManageTests : XCTestCase
 
 @end
@@ -27,8 +26,16 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
-
-- (void)testExample
+- (void)testCacheData
 {
+    
+}
+- (id)testGetContentFromRequest:(NSString *)url
+{
+    
+}
+- (id)testGetContentFromRequest:(NSString *)url fromCache:(*BOOL)isCache
+{
+    
 }
 @end

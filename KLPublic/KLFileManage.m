@@ -11,15 +11,15 @@
 @implementation KLFileManage
 + (BOOL)createDirectory:(NSString *)path
 {
-    BOOL isCreated = YES;
+    BOOL success = YES;
     NSFileManager *fm = [NSFileManager defaultManager];
     NSError *error = nil;
-    isCreated = [fm createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
-    if(isCreated==NO)
+    success = [fm createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
+    if(success==NO)
     {
         NSLog(@"%@" , error);
     }
-    return isCreated;
+    return success;
 }
 + (BOOL)saveFileWithPath:(NSString *)path content:(id)content
 {

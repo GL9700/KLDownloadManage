@@ -10,13 +10,15 @@
 #import "KLModelBase.h"
 #import "KLFileManage.h"
 #import "KLDMMacros.h"
+#import "ASIHTTPRequest.h"
+
 @implementation KLModelBase
 
 - (id)init
 {
     if((self = [super init]))
     {
-        _isFirstReceive =YES;
+        _dm_isFirstReceive =YES;
         queue = [[ASINetworkQueue alloc]init];
         SAFE_ARC_AUTORELEASE(queue);
         [queue setMaxConcurrentOperationCount:1];
@@ -41,18 +43,18 @@
 }
 - (NSOperation *)getOperationWithDelegate:(NSObject *)delegateObject
 {
-    if(_url!=nil && _url.length>0)
+    if(_dm_url!=nil && _dm_url.length>0)
     {
-        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:_url]];
+        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:_dm_url]];
         [request setTimeOutSeconds:30.f];
         [request setDownloadProgressDelegate:delegateObject];
         [request setDelegate:delegateObject];
-        NSString *newDownloading = [kPathDownloading stringByAppendingPathComponent:_directory];
-        NSString *newFinish = [kPathFinished stringByAppendingPathComponent:_directory];
+        NSString *newDownloading = [kPathDownloading stringByAppendingPathComponent:_dm_directory];
+        NSString *newFinish = [kPathFinished stringByAppendingPathComponent:_dm_directory];
         [KLFileManage createDirectory:newDownloading];
         [KLFileManage createDirectory:newFinish];
-        [request setTemporaryFileDownloadPath:[newDownloading stringByAppendingPathComponent:_name]];
-        [request setDownloadDestinationPath:[newFinish stringByAppendingPathComponent:_name]];
+        [request setTemporaryFileDownloadPath:[newDownloading stringByAppendingPathComponent:_dm_name]];
+        [request setDownloadDestinationPath:[newFinish stringByAppendingPathComponent:_dm_name]];
         [request setAllowResumeForFileDownloads:YES];
         return request;
     }
@@ -60,7 +62,7 @@
 }
 - (void)addOperation:(NSOperation*)operation
 {
-    if(_m3u8TS!=nil && [_m3u8TS containsObject:[[(ASIHTTPRequest *)operation url] absoluteString]])
+    if(_dm_m3u8TS!=nil && [_dm_m3u8TS containsObject:[[(ASIHTTPRequest *)operation url] absoluteString]])
         return;
     if(queue)
        [queue addOperation:operation];
@@ -82,11 +84,11 @@
 
 - (void)queueDidFinished:(ASINetworkQueue *)queue
 {
-    if([_loadedByte intValue]>=[_totalByte intValue] || _status==TaskStatusFinished)
+    if([_dm_loadedByte intValue]>=[_dm_totalByte intValue] || _dm_status==TaskStatusFinished)
     {
-        if([KLFileManage removeFileWithPath:[[kPathDownloading stringByAppendingPathComponent:_name] stringByAppendingPathExtension:kIndexSuffix]])
-            if([KLFileManage saveFileWithPath:[[kPathFinished stringByAppendingPathComponent:_name] stringByAppendingPathExtension:kIndexSuffix] content:[self desc]])
-                NSLog(@"删除&创建Info : %@" , _name);
+        if([KLFileManage removeFileWithPath:[[kPathDownloading stringByAppendingPathComponent:_dm_name] stringByAppendingPathExtension:kIndexSuffix]])
+            if([KLFileManage saveFileWithPath:[[kPathFinished stringByAppendingPathComponent:_dm_name] stringByAppendingPathExtension:kIndexSuffix] content:[self desc]])
+                NSLog(@"删除&创建Info : %@" , _dm_name);
     }
 }
 - (NSDictionary *)desc
@@ -110,10 +112,10 @@
     return dictionary;
 }
 
-- (void)setFinishTask:(NSString *)taskurl
+- (void)addFinishTS:(NSString *)tsurl
 {
-    if(!_m3u8TS)
-        _m3u8TS = [NSMutableArray array];
-    [_m3u8TS addObject:taskurl];
+    if(!_dm_m3u8TS)
+        _dm_m3u8TS = [NSMutableArray array];
+    [_dm_m3u8TS addObject:tsurl];
 }
 @end
