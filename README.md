@@ -1,8 +1,15 @@
 KLDownloadManage
 ================
-download Library : support M3U8 and Multiple File download.
+support M3U8 and Multiple File download.
+==========
 
-struct & Frame  
+
+Project Restructuring!! - 2017-12-01
+...
+--------------------
+!!Depercated!! - 2017-11-30
+--------------------
+<del>struct & Frame
 --------
     |
     |- KLPublic // 公用类
@@ -30,8 +37,4 @@ Version
 ###1.03
 修正在MRC环境下的内存问题
 重构了Model里的变量名预防冲突
-
-Contact Me
------------
-Glen  
-E-Mail 36617161@qq.com
+</del>
